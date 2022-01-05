@@ -15,35 +15,49 @@
 <body>
 
     <!-- header-section starts here  -->
-<header class="header">
-    <div class="header-1">
-        <a href="#" class="logo"><i class="fas fa-book"></i> Bookly</a>
+<header class="header_section">
+    <div class="header">
+        <div class="logo">
+            <a href="#"><i class="fas fa-book"></i> Bookly</a>
+        </div>
 
         <form action="" class="search-form">
-            <input type="search" name="" placeholder="search here..."  id="search-box">
-            <label for="search-box" class="fas fa-search"></label>
+            <input type="search" placeholder="search here..."  >
+            <label for=""><i class="fas fa-search"></i></label>
         </form>
 
         <div class="icons">
-            <div id="search-box search_btn" class="fas fa-search style_icon" ></div>
-            <a href="#" class="fas fa-heart style_icon"></a>
-            <a href="#" class="fas fa-shopping-cart style_icon"></a>
-            <div id="login-btn" class="fas fa-user style_icon" ></div>
+            <a href="#" id="search-btn" ><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#" id="signup-btn" ><i class="fas fa-user"></i></a>
         </div>
+        <form action="" class="signup-form">
+            <h4>SIGN IN</h4>
+          <div class="username">
+            <span>Useranme</span><br>
+            <input type="email" placeholder="Enter your email">
+          </div>
+          <div class="password">
+            <span>Password</span><br>
+            <input type="password" placeholder="Enter password" >
+          </div>
+          <div class="checkbox">
+            <input type="checkbox">
+            <label for="">Remember me</label>
+          </div>
+          <button class="signin-btn" >Sign In</button>
+          <p class="forget" >Forget password ?<a href="#">  Click here</a></p>
+          <p class="create">Don't Have An Account ? <a href="#"> Create one</a></p>
+        </form>
     </div>
 </header>
 
     <!-- header-section ends here  -->
 
 
-
-      
-    
-
-
-
-
  <!-- custom js file linked here   -->
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

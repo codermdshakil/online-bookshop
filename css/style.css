@@ -39,14 +39,15 @@ html::-webkit-scrollbar-thumb{
 }
 body{
     background: white;
+    height: 300rem;
 }
  /* header-section starts here   */
- .header{
+.header{
     height: 12vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
- }
+}
 .logo{
     font-size: 24px;
 }
@@ -67,12 +68,17 @@ body{
     height: 6vh;
     display: flex;
     align-items: center;
+    background: #eee;
+
 
 }
 .search-form input{
     width: 100%; 
     color: var(--black);
     font-size:16px;
+    background: #eee;
+    padding: 5px;
+    border-radius: 5px;
 }
 .search-form i{
     color: var(--black);
@@ -96,10 +102,9 @@ body{
 .icons a:nth-child(1){
     display: none;
 }
- /* header-section ends here   */
 .signup-form{
     position: absolute;
-    top: 12vh;
+    top: 15vh;
     right:15vh;
     width: 25%;
     padding: 20px;
@@ -185,6 +190,62 @@ body{
     color: var(--green);
 }
 
+ /* header-section ends here   */
+
+ /* header-section two stars here  */
+ .header-sectionT{
+     background:var(--green);
+
+}
+.header-sectionT.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+.navber{
+    padding: 14px 0px;
+    text-align: center;
+    justify-content: center;
+}
+.navber a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    margin:-2.4px;
+    transition: all .2s linear;
+}
+.navber a:hover{
+    background:rgba(0, 0, 0, 0.123);
+}
+ /* header-section two ends here  */ 
+/* navber bottom starts here  */
+.bottom-navber{
+    text-align: center;
+    background:var(--green);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+}
+.bottom-navber a{
+    font-size:24px;
+    padding: 12px 13px;
+    text-decoration: none;
+    color:white;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+.bottom-navber a:hover{
+    background:rgba(0, 0, 0, 0.123);
+}
+
+
+/* navber bottom ends here  */
 
 
 
@@ -192,11 +253,22 @@ body{
 
 
 
+
+
+
+
+/* media queries */
 
 @media screen and (max-width:1024px){
+    html{
+        scroll-padding-top: 0;
+    }
+    body{
+        padding-bottom: 6rem;
+    }
     .search-form{
         position: absolute;
-        top: 12vh;
+        top: 15vh;
         right: 20vh;
         width: 50%;
         transform: scale(0);
@@ -216,6 +288,16 @@ body{
         right:20vh;
         width: 33%;
     }
+    .header-sectionT{
+        display: none;
+    }
+    .header{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    }
+    .bottom-navber{
+        display:block;
+    }
 }
 @media screen and (max-width:576px){
     .signup-form{
@@ -228,5 +310,4 @@ body{
 
     }
 
-    
 }

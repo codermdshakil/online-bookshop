@@ -12,4 +12,26 @@ document.querySelector('#signup-btn').onclick = () =>{
   searchForm.classList.remove('active');
 }
 
+window.onscroll = () =>{
+   
+
+  // searchForm.classList.remove('active');
+
+  if(window.scrollY > 80){
+    document.querySelector('.header-sectionT').classList.add('active');
+
+  }else{
+    document.querySelector('.header-sectionT').classList.remove('active');
+
+  }
+}
+window.onload = () =>{
+  if(window.scrollY > 80){
+    document.querySelector('.header-sectionT').classList.add('active');
+
+  }else{
+    document.querySelector('.header-sectionT').classList.remove('active');
+
+  }
+}
 

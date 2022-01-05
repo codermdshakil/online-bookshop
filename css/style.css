@@ -220,7 +220,7 @@ body{
 @media screen and (max-width:576px){
     .signup-form{
         right:5vh;
-        width: 60%;
+        width: 80%;
     }
     .search-form{
         right:5vh;
